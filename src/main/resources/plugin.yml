@@ -1,0 +1,24 @@
+name: PluginMessageUtilities
+main: com.example.pluginmessageutilities.PluginMessageUtilities
+version: 1.0.0
+api-version: 1.13
+
+commands:
+  getoutgoingchannels:
+    description: Lists all outgoing plugin messaging channels.
+    usage: /getoutgoingchannels
+    permission: plugin.debug.getoutgoingchannels
+    permission-message: You do not have permission to execute this command.
+  getincomingchannels:
+    description: Lists all incoming plugin messaging channels.
+    usage: /getincomingchannels
+    permission: plugin.debug.getincomingchannels
+    permission-message: You do not have permission to execute this command.
+
+permissions:
+  plugin.debug.getoutgoingchannels:
+    description: Allows use of /getoutgoingchannels command.
+    default: op
+  plugin.debug.getincomingchannels:
+    description: Allows use of /getincomingchannels command.
+    default: op
